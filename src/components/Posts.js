@@ -1,4 +1,6 @@
-const Main = (props) => {
+import '../styles/layout/posts.scss';
+
+const Posts = (props) => {
         return props.dataApi.map((element, index) => {
             return (<>
             <li key={index} className='post-list'>
@@ -9,4 +11,4 @@ const Main = (props) => {
         })
     }
 
-export default Main;
+export default Posts;
