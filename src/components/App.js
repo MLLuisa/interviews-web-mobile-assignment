@@ -22,7 +22,7 @@ const handleFilterByTitle = (value) => {
 
   return (
     <div className="App">
-      <h1>Post</h1>
+      <h1 className='header-title'>Post</h1>
       <Filters
       handleFilterByTitle={handleFilterByTitle}
       filterByTitle={filterByTitle}/>

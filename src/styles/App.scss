@@ -1,2 +1,13 @@
 @import './layout/posts.scss';
 @import './layout/filterByTitle.scss';
+
+.header-title {
+    color: rgb(0, 37, 0);
+    text-align: right;
+    @media all and (min-width: 480px) {
+        text-align: center;
+    }
+    @media all and (min-width: 720px) {
+        text-align: start;
+    }
+}

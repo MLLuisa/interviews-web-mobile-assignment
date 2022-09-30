@@ -1,6 +1,12 @@
 .wrapper-list {
     list-style: none;
     padding: 2px;
+    @media all and (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 .post-list {
@@ -9,4 +15,11 @@
     width: 100rem;
     padding: 5px;
     margin-bottom: 5px;
+    @media all and (min-width: 480px) {
+        width: auto;
+    }
+}
+
+.post-list:hover {
+    border: 2px dotted green;
 }
