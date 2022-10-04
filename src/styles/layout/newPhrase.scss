@@ -1,0 +1,53 @@
+.formName {
+    width: 450px;
+    @media all and (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media all and (min-width: 720px) {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+
+.labelName {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 59, 0);
+}
+
+.inputName {
+    border: 4px solid;
+    border-color: green;
+    height: 22px;
+    width: 150px;
+    font-size: 20px;
+}
+
+::placeholder {
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.wrapper-newPhrase {
+    padding-top: 5px;
+}
+
+.addButton {
+    background-color: rgb(89, 105, 89);
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.addButton:hover {
+    width: 60px;
+}
