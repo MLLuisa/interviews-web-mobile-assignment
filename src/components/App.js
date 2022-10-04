@@ -12,7 +12,6 @@ const [filterByTitle, setFilterByTitle] = useState("");
 useEffect(() => {
   api().then((dataFromApi) => {
     setDataApi(dataFromApi);
-    console.log(dataFromApi);
   });
 }, []);
 
@@ -28,7 +27,8 @@ const handleFilterByTitle = (value) => {
       filterByTitle={filterByTitle}/>
       <ul className='wrapper-list'>
         <Posts
-        dataApi={dataApi}/>
+        dataApi={dataApi}
+        filterByTitle={filterByTitle}/>
       </ul>
     </div>
   );
