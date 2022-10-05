@@ -30,16 +30,16 @@ const saveNewTitle = (value) => {
   setNewTitle(value);
 }
 
-const addNewPhraseandTitle = (ev) => {
+const addNewPhraseAndTitle = (ev) => {
   ev.preventDefault();
   if(newPhrase === "" || newTitle === "") {
     alert('You have to fill all the inputs');
     return false
   } else {
     const newList = {body: newPhrase, title: newTitle};
-  setDataApi([...dataApi, newList])
-  setNewPhrase("");
-  setNewTitle("");
+  setDataApi([...dataApi, newList]);
+  setNewPhrase('');
+  setNewTitle('');
   }
 }
 
@@ -56,7 +56,7 @@ const addNewPhraseandTitle = (ev) => {
       newTitle={newTitle}
       newPhrase={newPhrase}
       saveNewPhrase={saveNewPhrase}
-      addNewPhraseandTitle={addNewPhraseandTitle}/>
+      addNewPhraseandTitle={addNewPhraseAndTitle}/>
       </div>
       <ul className='wrapper-list'>
         <Posts

@@ -28,7 +28,7 @@ const NewPhrase = (props) => {
              onChange={saveNewPhrase}/>
     </label>
   </form>
-  <button onClick={props.addNewPhraseandTitle} className='addButton'>Add</button>
+  <button onClick={props.addNewPhraseAndTitle} className='addButton'>Add</button>
   </>)
 }
 
